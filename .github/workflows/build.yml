@@ -1,4 +1,4 @@
-name: Tests & Build
+name: Build
 
 on:
   pull_request:
@@ -9,33 +9,6 @@ on:
       - master
 
 jobs:
-    test:
-        name: run tests
-
-        runs-on: ubuntu-latest
-
-        steps:
-            - uses: actions/checkout@v2
-
-            - name: Install dependencies
-              run: yarn
-
-            - name: Run lint
-              run: yarn lint
-
-            - name: Setup timezone
-              uses: zcong1993/setup-timezone@master
-              with:
-                timezone: Europe/Moscow
-
-            - name: Run test
-              run: yarn test --coverage
-
-            - name: Coveralls
-              uses: coverallsapp/github-action@master
-              with:
-                github-token: ${{ secrets.GITHUB_TOKEN }}
-
     build:
         name: build packages
 

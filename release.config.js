@@ -11,9 +11,8 @@ module.exports = {
             '@semantic-release/npm',
             { npmPublish: false },
         ],
-        '@semantic-release/git',
         '@semantic-release/github',
     ],
     branches: ['master'],
-    repositoryUrl: 'https://github.com/core-ds/core-components',
+    repositoryUrl: 'https://github.com/malmo-east/core-components',
 };

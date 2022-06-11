@@ -422,14 +422,14 @@ render(
 ```tsx live
 const groups = [
     {
-        label: 'Группа №1',
+        divider: {key: '1', content: <p>Группа №1</p>},
         options: [
             { key: '1', content: 'Neptunium' },
             { key: '2', content: 'Plutonium' },
         ],
     },
     {
-        label: 'Группа №2',
+        divider: {key: '2', content: <p>Группа №2</p>},
         options: [
             { key: '3', content: 'Berkelium' },
             { key: '4', content: 'Californium' },
@@ -437,7 +437,7 @@ const groups = [
     },
 ];
 
-render(<Select options={groups} label='Группированный селект' multiple={true} />);
+render(<Select options={groups} label='Группированный селект' multiple={true} allowUnselect={true} />);
 ```
 
 ## Нативный селект
@@ -447,14 +447,14 @@ render(<Select options={groups} label='Группированный селект
 ```tsx live
 const groups = [
     {
-        label: 'Группа №1',
+        divider: "Группа №1",
         options: [
             { key: '1', content: 'Neptunium' },
             { key: '2', content: 'Plutonium' },
         ],
     },
     {
-        label: 'Группа №2',
+        divider: "Группа №2",
         options: [
             { key: '3', content: 'Berkelium' },
             { key: '4', content: 'Californium' },
@@ -497,7 +497,7 @@ render(
 ```tsx live
 const groups = new Array(100).fill().reduce((acc, _, groupIndex) => {
     return acc.concat({
-        label: `Группа №${groupIndex + 1}`,
+        divider: {key: `${groupIndex + 1}`, content: <p>{`Группа №${groupIndex + 1}`}</p>},
         options: new Array(5).fill().map((_, index) => ({
             key: index,
             content: `Пункт ${groupIndex + 1}.${index + 1}`,

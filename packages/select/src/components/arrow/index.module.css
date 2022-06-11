@@ -3,8 +3,8 @@
 
 .arrow {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     color: var(--select-arrow-color);
 
     transition: transform 0.15s ease-in-out, opacity 0.2s ease;

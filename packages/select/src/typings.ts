@@ -33,11 +33,23 @@ export type OptionShape = {
     value?: any;
 };
 
+export type GroupDividerItem = {
+    /**
+     * Текстовое представление разделителя
+     */
+    key: string;
+
+    /**
+     * Контент, который будет отрисован в разделителе
+     */
+    content?: ReactNode | string;
+};
+
 export type GroupShape = {
     /**
-     * Заголовок группы
+     * Разделитель группы
      */
-    label?: string;
+    divider: GroupDividerItem | string;
 
     /**
      * Дочерние элементы
@@ -424,6 +436,11 @@ export type OptionsListProps = {
     optionGroupClassName?: string;
 
     /**
+     * Дополнительный класс для разделителя
+     */
+    optionGroupDividerClassName?: string;
+
+    /**
      * Размер компонента
      */
     size?: 's' | 'm' | 'l' | 'xl';
@@ -519,17 +536,6 @@ export type OptionsListProps = {
     showFooter?: boolean;
 
     /**
-     * Нужно ли использовать нативный скроллбар
-     */
-    nativeScrollbar?: boolean;
-
-    /**
-     * Управляет шириной выпадающего меню.
-     * Ширину определяет контент, либо ширина равна ширине поля
-     */
-    optionsListWidth?: BaseSelectProps['optionsListWidth'];
-
-    /**
      * Обработчик подтверждения изменений
      */
     onApply?: () => void;
@@ -547,6 +553,11 @@ export type OptgroupProps = {
     className?: string;
 
     /**
+     * Дополнительный класс для разделителя
+     */
+    optionGroupDividerClassName?: string;
+
+    /**
      * Размер компонента
      */
     size?: 's' | 'm' | 'l' | 'xl';
@@ -554,12 +565,17 @@ export type OptgroupProps = {
     /**
      * Заголовок группы
      */
-    label?: string;
+    divider?: ReactNode;
 
     /**
      * Дочерние элементы
      */
     children?: ReactNode;
+
+    /**
+     * Текстовое представление пункта
+     */
+    key: string;
 };
 
 export type OptionProps = {

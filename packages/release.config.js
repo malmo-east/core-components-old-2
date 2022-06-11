@@ -6,5 +6,5 @@ module.exports = {
         ['@semantic-release/npm', { pkgRoot: './' }],
     ],
     branches: ['master'],
-    repositoryUrl: 'https://github.com/core-ds/core-components',
+    repositoryUrl: 'https://github.com/malmo-east/core-components',
 };

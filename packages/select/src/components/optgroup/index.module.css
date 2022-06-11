@@ -16,11 +16,10 @@
     }
 }
 
-.label {
+.divider {
     @mixin system_12-16_medium_caps;
 
     display: block;
-    color: var(--select-optgroup-color);
 }
 
 .l,

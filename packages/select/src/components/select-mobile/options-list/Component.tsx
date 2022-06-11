@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { Button } from '@alfalab/core-components-button';
 import { BaseModalContext } from '@alfalab/core-components-base-modal';
 
-import { GroupShape, OptionShape, OptionsListProps } from '../../../typings';
+import { GroupShape, OptionShape, OptionsListProps, GroupDividerItem } from '../../../typings';
 import { Optgroup as DefaultOptgroup } from '../../optgroup';
 import { isGroup } from '../../../utils';
 
@@ -47,8 +47,8 @@ export const OptionsList = ({
         (group: GroupShape) => (
             <Optgroup
                 className={optionGroupClassName}
-                label={group.label}
-                key={group.label}
+                key={(group.divider as GroupDividerItem).key}
+                divider={(group.divider as GroupDividerItem).content}
                 size={size}
             >
                 {group.options.map(option => renderOption(option, counter()))}

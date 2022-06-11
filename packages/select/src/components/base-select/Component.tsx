@@ -438,7 +438,6 @@ export const BaseSelect = forwardRef(
                             >
                                 <OptionsList
                                     {...optionsListProps}
-                                    optionsListWidth={optionsListWidth}
                                     flatOptions={flatOptions}
                                     highlightedIndex={highlightedIndex}
                                     open={open}

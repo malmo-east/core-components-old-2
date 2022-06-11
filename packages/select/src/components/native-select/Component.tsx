@@ -20,8 +20,8 @@ const Option = ({ option }: { option: OptionShape }) => (
     </option>
 );
 
-const Group = ({ label, options }: GroupShape) => (
-    <optgroup label={label}>
+const Group = ({ divider, options }: GroupShape) => (
+    <optgroup label={divider as string}>
         {options.map(option => (
             <Option option={option} key={option.key} />
         ))}
@@ -48,7 +48,7 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
             >
                 {options.map(option =>
                     isGroup(option) ? (
-                        <Group {...option} key={option.label} />
+                        <Group {...option} key={option.divider as string} />
                     ) : (
                         <Option option={option} key={option.key} />
                     ),
