@@ -1,0 +1,57 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { CssVars, ComponentHeader, Tabs } from 'storybook/blocks';
+
+import { Container } from '../';
+import { version } from '../../package.json';
+import Description from './description.mdx';
+import Changelog from '../../CHANGELOG.md';
+import styles from '!!raw-loader!../index.module.css';
+
+
+<Meta
+    title='Компоненты/Container'
+    component={Container}
+/>
+
+
+<!-- Canvas -->
+
+
+<Story name='Container'>
+    {React.createElement(() => {
+        return (
+            <div style={{
+                padding: '8px',
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+            }}>
+                <Container>
+                    Container children
+                </Container>
+            </div>
+        )
+    })}
+</Story>
+
+
+<!-- Docs -->
+
+<ComponentHeader
+    name='Container'
+    version={version}
+    stage={3}
+/>
+
+```tsx
+import { Container } from '@friday-team/core-components/container';
+```
+
+<Tabs
+    description={<Description />}
+    changelog={<Changelog />}
+    props={<Props of={Container} /> }
+    cssVars={<CssVars css={`${styles}`} />}
+/>

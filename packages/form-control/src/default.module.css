@@ -1,29 +1,28 @@
 @import '../../themes/src/default.css';
 
 :root {
-    --form-control-border-bottom: 1px solid var(--color-light-border-underline);
-    --form-control-bg-color: var(--color-light-bg-primary-inverted-alpha-7);
+    --form-control-box-shaddow: 0 0 0 1px var(--color-light-border-underline);
+    --form-control-bg-color: transparent;
     --form-control-color: var(--color-light-text-primary);
     --form-control-label-color: var(--color-light-text-secondary);
     --form-control-hint-color: var(--color-light-text-secondary);
 
     /* disabled */
     --form-control-disabled-bg-color: var(--color-light-bg-primary-inverted-alpha-15);
-    --form-control-disabled-border-bottom: 1px dashed var(--color-light-border-underline);
     --form-control-disabled-color: var(--color-light-text-secondary);
 
     /* focus */
-    --form-control-focus-border-bottom: 1px solid var(--color-light-border-key);
-    --form-control-focus-bg-color: var(--color-light-bg-primary-inverted-alpha-15);
+    --form-control-focus-box-shaddow: 0 0 0 3px var(--color-light-bg-accent);
+    --form-control-focus-bg-color: transparent;
 
     /* hover */
-    --form-control-hover-bg-color: var(--color-light-bg-primary-inverted-alpha-15);
+    --form-control-hover-box-shaddow: 0 0 0 1px var(--color-light-bg-accent);
+    --form-control-hover-bg-color: transparent;
 
     /* error */
     --form-control-error-color: var(--color-light-text-negative);
     --form-control-error-label-color: var(--color-light-text-secondary);
-    --form-control-error-shadow: none;
-    --form-control-error-border-bottom: 1px solid var(--color-static-border-accent);
+    --form-control-error-box-shadow: 0 0 0 1px var(--color-light-text-negative);
 }
 
 .component {
@@ -31,12 +30,8 @@
 }
 
 .inner {
+    box-shadow: var(--form-control-box-shaddow);
     background-color: var(--form-control-bg-color);
-}
-
-/* Нижняя граница */
-.inner:before {
-    border-bottom: var(--form-control-border-bottom);
 }
 
 .label {
@@ -50,28 +45,27 @@
 /* DISABLED STATE */
 
 .disabled {
+    box-shadow: var(--form-control-box-shaddow);
     background-color: var(--form-control-disabled-bg-color);
     color: var(--form-control-disabled-color);
 }
 
-.disabled:before {
-    border-bottom: var(--form-control-disabled-border-bottom);
-}
-
 /* FOCUS STATE */
 
-.focused:not(.disabled):not(.hasError):before {
-    border-bottom: var(--form-control-focus-border-bottom);
-}
-
 .focused.inner {
+    box-shadow: var(--form-control-focus-box-shaddow);
     background-color: var(--form-control-focus-bg-color);
 }
 
 /* HOVER STATE */
 
 .inner:not(.disabled):hover {
+    box-shadow: var(--form-control-hover-box-shaddow);
     background-color: var(--form-control-hover-bg-color);
+}
+
+.focused.inner:hover {
+    box-shadow: var(--form-control-focus-box-shaddow);
 }
 
 /* ERROR STATE */
@@ -85,9 +79,9 @@
 }
 
 .hasError {
-    box-shadow: var(--form-control-error-shadow);
+    box-shadow: var(--form-control-box-shaddow);
 }
 
-.hasError:before {
-    border-bottom: var(--form-control-error-border-bottom);
+.hasError:hover {
+    box-shadow: var(--form-control-error-box-shadow);
 }

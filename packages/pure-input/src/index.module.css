@@ -7,7 +7,7 @@
     display: inline-flex;
     box-sizing: border-box;
     color: var(--input-color);
-    background-color: var(--form-control-bg-color);
+    background-color: transparent;
     border-radius: var(--form-control-border-radius);
     transition: background 0.2s ease, box-shadow 0.2s ease, border 0.2s ease, color 0.2s ease;
     border: none;

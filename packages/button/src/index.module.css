@@ -3,10 +3,10 @@
 :root {
     /* misc */
     --button-font-family: var(--font-family);
-    --button-border-radius: var(--border-radius-m);
+    --button-border-radius: var(--border-radius-xl);
     --button-active-transform: scale(0.97);
     --button-font-weight: 500;
-    --button-xxs-size-border-radius: 6px;
+    --button-xxs-size-border-radius: var(--border-radius-xl);
 }
 
 .component {

@@ -1,5 +1,5 @@
 :root {
-    --color-dark-bg-accent: #ef3124;
+    --color-dark-bg-accent: #fee92f;
     --color-dark-bg-attention-muted: #332104;
     --color-dark-bg-info: #001c3c;
     --color-dark-bg-negative-muted: #35110d;
@@ -65,7 +65,7 @@
     --color-dark-text-tertiary-inverted: #c5c5c7;
     --color-dark-text-tertiary-inverted-transparent: rgba(60, 60, 67, 0.3);
     --color-dark-text-tertiary-transparent: rgba(235, 235, 245, 0.3);
-    --color-light-bg-accent: #ef3124;
+    --color-light-bg-accent: #fee92f;
     --color-light-bg-attention-muted: #f7ebd9;
     --color-light-bg-info: #d6e8fc;
     --color-light-bg-negative-muted: #fbe8e7;
@@ -155,12 +155,12 @@
     --color-static-text-tertiary-dark-transparent: rgba(60, 60, 67, 0.3);
     --color-static-text-tertiary-light: #464649;
     --color-static-text-tertiary-light-transparent: rgba(235, 235, 245, 0.3);
-    --color-dark-bg-accent-alpha-30: rgba(239, 49, 36, 0.3);
+    --color-dark-bg-accent-alpha-30: rgba(254, 233, 47, 0.5);
     --color-dark-bg-accent-shade-15: rgb(203, 42, 31);
     --color-dark-bg-accent-shade-20: rgb(191, 39, 29);
-    --color-dark-bg-accent-tint-7: rgb(240, 63, 51);
+    --color-dark-bg-accent-tint-40: rgb(254, 223, 31);
     --color-dark-bg-accent-tint-10: rgb(241, 70, 58);
-    --color-dark-bg-accent-tint-15: rgb(241, 80, 69);
+    --color-dark-bg-accent-tint-85: rgb(254, 236, 78);
     --color-dark-bg-accent-tint-30: rgb(244, 111, 102);
     --color-dark-bg-primary-alpha-8: rgba(18, 18, 18, 0.08);
     --color-dark-bg-primary-alpha-15: rgba(18, 18, 18, 0.15);
@@ -278,12 +278,12 @@
     --color-dark-text-secondary-tint-40: rgb(187, 187, 190);
     --color-dark-text-secondary-inverted-shade-20: rgb(110, 110, 114);
     --color-dark-text-secondary-inverted-shade-30: rgb(97, 97, 99);
-    --color-light-bg-accent-alpha-30: rgba(239, 49, 36, 0.3);
+    --color-light-bg-accent-alpha-30: rgba(254, 233, 47, 0.5);
     --color-light-bg-accent-tint-15: rgb(241, 80, 69);
     --color-light-bg-accent-tint-20: rgb(242, 90, 80);
-    --color-light-bg-accent-shade-7: rgb(222, 46, 33);
+    --color-light-bg-accent-shade-40: rgb(254, 223, 31);
     --color-light-bg-accent-shade-10: rgb(215, 44, 32);
-    --color-light-bg-accent-shade-15: rgb(203, 42, 31);
+    --color-light-bg-accent-shade-85: rgb(254, 236, 78);
     --color-light-bg-accent-shade-30: rgb(167, 34, 25);
     --color-light-bg-primary-alpha-8: rgba(255, 255, 255, 0.08);
     --color-light-bg-primary-alpha-15: rgba(255, 255, 255, 0.15);

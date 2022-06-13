@@ -1,0 +1,39 @@
+:root {
+    --container-width-fluid: 100%;
+    --container-with-xs: 540px;
+    --container-with-sm: 720px;
+    --container-with-md: 960px;
+    --container-with-lg: 1140px;
+    --container-with-xl: 1320px;
+}
+
+.component {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerFluid {
+    max-width: var(--container-width-fluid);
+}
+
+.containerXs {
+    max-width: var(--container-with-xs);
+}
+
+.containerSm {
+    max-width: var(--container-with-sm);
+}
+
+.containerMd {
+    max-width: var(--container-with-md);
+}
+
+.containerLg {
+    max-width: var(--container-with-lg);
+}
+
+.containerXl {
+    max-width: var(--container-with-xl);
+}

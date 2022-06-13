@@ -3,11 +3,11 @@
 :root {
     /* primary */
     --button-inverted-primary-base-bg-color: var(--color-light-bg-accent);
-    --button-inverted-primary-hover-bg-color: var(--color-light-bg-accent-tint-15);
-    --button-inverted-primary-active-bg-color: var(--color-light-bg-accent-tint-20);
-    --button-inverted-primary-disabled-bg-color: color-mod(var(--color-dark-bg-accent) alpha(30%));
-    --button-inverted-primary-disabled-color: var(--color-static-text-primary-light-alpha-30);
-    --button-inverted-primary-color: var(--color-static-text-primary-light);
+    --button-inverted-primary-hover-bg-color: var(--color-light-bg-accent-shade-40);
+    --button-inverted-primary-active-bg-color: var(--color-light-bg-accent-shade-85);
+    --button-inverted-primary-disabled-bg-color: var(--color-light-bg-accent-alpha-30);
+    --button-inverted-primary-color: var(--color-light-text-primary);
+    --button-inverted-primary-disabled-color: var(--color-light-text-primary-alpha-30);
 
     /* secondary */
     --button-inverted-secondary-base-bg-color: var(--color-light-specialbg-component-inverted);
